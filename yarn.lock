@@ -514,7 +514,8 @@ __metadata:
     ava: ^3.15.0
     chalk: ^4.1.0
     eslint: ^7.18.0
-    eslint-config-shellscape: ^3.0.0
+    eslint-config-prettier: 6.5.0
+    eslint-plugin-import: ^2.23.4
     eslint-plugin-prettier: ^3.3.1
     fast-safe-stringify: ^2.0.7
     isomorphic-unfetch: ^3.1.0
@@ -2757,15 +2758,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-shellscape@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "eslint-config-shellscape@npm:3.0.0"
+"eslint-config-prettier@npm:6.5.0":
+  version: 6.5.0
+  resolution: "eslint-config-prettier@npm:6.5.0"
   dependencies:
-    eslint: ^7.16.0
-    eslint-plugin-import: ^2.14.0
-    eslint-plugin-prettier: ^3.1.0
-    prettier: ^2.2.1
-  checksum: 5bb6a82ea1546b29665122a807ad7185d24c111874e9e01e016a7467fc4242d57afdcf8e1b3c372d9c96211b51e1046d1fb0f01d4e6eb7697c6ad5c513d364b8
+    get-stdin: ^6.0.0
+  peerDependencies:
+    eslint: ">=3.14.1"
+  bin:
+    eslint-config-prettier-check: bin/cli.js
+  checksum: f89f17fef4bee4d350fa853b550a2d79d1832d4046cf2dd97f47756c63c1f75af854fb1eba228c6b53cc86e41e7ab92d42f09d90b801403d966e83a2d1503e6d
   languageName: node
   linkType: hard
 
@@ -2789,7 +2791,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.14.0":
+"eslint-plugin-import@npm:^2.23.4":
   version: 2.23.4
   resolution: "eslint-plugin-import@npm:2.23.4"
   dependencies:
@@ -2814,7 +2816,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.1.0, eslint-plugin-prettier@npm:^3.3.1":
+"eslint-plugin-prettier@npm:^3.3.1":
   version: 3.4.0
   resolution: "eslint-plugin-prettier@npm:3.4.0"
   dependencies:
@@ -2873,7 +2875,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.16.0, eslint@npm:^7.18.0":
+"eslint@npm:^7.18.0":
   version: 7.30.0
   resolution: "eslint@npm:7.30.0"
   dependencies:
@@ -3354,6 +3356,13 @@ fsevents@~2.3.2:
   version: 0.1.0
   resolution: "get-package-type@npm:0.1.0"
   checksum: a5b8beaf68d8bcdb507e23b3d2b6458e54b9061e84e2a8a94b846c8e1d794beb47fdcbda895da16ae59225bb3ea1608c0719e4f986e8a987ec2f228eaf00d78b
+  languageName: node
+  linkType: hard
+
+"get-stdin@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "get-stdin@npm:6.0.0"
+  checksum: b51d664838aef7f8353dc57371ce59cea54d8d584fec015a9d89d24561e95b97806d5b5ba120bc81574c9ed63cb3e210176ffa0ff9263c7e7ba4d56d0fe54913
   languageName: node
   linkType: hard
 
