@@ -6,3 +6,12 @@ node_modules
 .nyc_output
 coverage.lcov
 dist
+
+# Yarn v2
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
