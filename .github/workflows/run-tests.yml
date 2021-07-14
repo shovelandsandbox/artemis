@@ -1,31 +1,30 @@
-name: Node
+name: Run Tests
 
 on: [push, pull_request]
 
 jobs:
   build:
-
-    runs-on: windows-2019
+    runs-on: ubuntu-20.04
 
     strategy:
       matrix:
-        node: [ '14' ]
+        node: [ '16' ]
 
     name: ${{ matrix.node }} (Windows)
     steps:
     - name: Configure git line-breaks
-      run: git config --global core.autocrlf false
+      run: git config --global core.autocrlf true
     - name: Checkout Commit
       uses: actions/checkout@v1
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node }}
-    - name: Install pnpm
-      run: npm install pnpm -g
-    - name: checkout master
-      run: git branch -f master origin/master
-    - name: pnpm install
-      run: pnpm install --ignore-scripts
+    - name: Install yarn
+      run: npm install yarn -g
+    - name: checkout main
+      run: git branch -f main origin/main
+    - name: yarn install
+      run: yarn --immutable --ignore-scripts
     - name: run tests
-      run: pnpm test
+      run: yarn test

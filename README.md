@@ -1,9 +1,9 @@
-[tests]: https://img.shields.io/circleci/project/github/shellscape/apollo-log.svg
-[tests-url]: https://circleci.com/gh/shellscape/apollo-log
-[cover]: https://codecov.io/gh/shellscape/apollo-log/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/shellscape/apollo-log
-[size]: https://packagephobia.now.sh/badge?p=apollo-log
-[size-url]: https://packagephobia.now.sh/result?p=apollo-log
+[tests]: https://img.shields.io/circleci/project/github/shovelandsandbox/artemis.svg
+[tests-url]: https://circleci.com/gh/shovelandsandbox/artemis
+[cover]: https://codecov.io/gh/shovelandsandbox/artemis/branch/main/graph/badge.svg
+[cover-url]: https://codecov.io/gh/shovelandsandbox/artemis
+[size]: https://packagephobia.now.sh/badge?p=artemis
+[size-url]: https://packagephobia.now.sh/result?p=artemis
 
 <div align="center">
 	<img src='https://user-images.githubusercontent.com/841294/53402609-b97a2180-39ba-11e9-8100-812bab86357c.png' height='100' alt='Apollo Server'><br/><br/>
@@ -13,19 +13,19 @@
 [![cover][cover]][cover-url]
 [![size][size]][size-url]
 
-# apollo-log
+# Artemis
 
 A logging plugin for Apollo GraphQL Server
 
-:heart: Please consider [Sponsoring my work](https://github.com/sponsors/shellscape)
+:heart: Please consider [Sponsoring our work](https://github.com/sponsors/shovelandsandbox)
 
-`apollo-server` doesn't ship with any comprehensive logging, and instead offloads that responsiblity to the users and the resolvers or context handler This module provides uniform logging for the entire GraphQL request lifecycle, as provided by plugin hooks in `apollo-server`. The console/terminal result of which will resemble the image below:
+This module provides uniform logging for the entire GraphQL request lifecycle, as provided by plugin hooks in `apollo-server`. The console/terminal result of which will resemble the image below:
 
 <img src="https://github.com/shellscape/apollo-log/raw/master/.github/screen.png" width="508">
 
 ## Requirements
 
-`apollo-log` is an [evergreen 🌲](./.github/FAQ.md#what-does-evergreen-mean) module.
+`artemis` is an [evergreen 🌲](./.github/FAQ.md#what-does-evergreen-mean) module.
 
 This module requires an [Active LTS](https://github.com/nodejs/Release) Node version (v10.23.1+).
 
@@ -34,19 +34,19 @@ This module requires an [Active LTS](https://github.com/nodejs/Release) Node ver
 Using npm:
 
 ```console
-npm install apollo-log
+npm install @shovelandsandbox/artemis
 ```
 
 ## Usage
 
-Setting up `apollo-log` is straight-forward. Import and call the plugin function, passing any desired options, and pass the plugin in an array to `apollo-server`.
+Setting up `artemis` is straight-forward. Import and call the plugin function, passing any desired options, and pass the plugin in an array to `apollo-server`.
 
 ```js
-import { ApolloLogPlugin } from 'apollo-log';
+import { ArtemisLoggingPlugin } from '@shovelandsandbox/artemis';
 import { ApolloServer } from 'apollo-server';
 
 const options = { ... };
-const plugins = [ApolloLogPlugin(options)];
+const plugins = [ArtemisLoggingPlugin(options)];
 const apollo = new ApolloServer({
   plugins,
   ...

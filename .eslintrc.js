@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["shellscape", "plugin:import/typescript"],
+  extends: ["plugin:import/typescript"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: ["./tsconfig.eslint.json", "./src/*/tsconfig.json"],
