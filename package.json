@@ -24,7 +24,7 @@
     "lint:package": "yarn prettier --write package.json --plugin=prettier-plugin-package",
     "prepublishOnly": "yarn run lint && yarn run build",
     "pretest": "yarn run build",
-    "security": "yarn npm audit --audit-level=moderate",
+    "security": "yarn npm audit --severity moderate",
     "test": "yarn ava"
   },
   "files": [
