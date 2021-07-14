@@ -25,6 +25,6 @@ jobs:
     - name: checkout main
       run: git branch -f main origin/main
     - name: yarn install
-      run: yarn --immutable --ignore-scripts
+      run: yarn --immutable
     - name: run tests
       run: yarn test

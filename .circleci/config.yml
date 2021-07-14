@@ -13,7 +13,7 @@ jobs:
           command: npm install yarn -g
       - run:
           name: Install Dependencies
-          command: yarn --immutable --ignore-scripts
+          command: yarn --immutable
       - run:
           name: Run unit tests.
           command: yarn run ci:coverage
@@ -31,7 +31,7 @@ jobs:
           command: npm install yarn -g
       - run:
           name: Install Dependencies
-          command: yarn install --immutable --ignore-scripts
+          command: yarn install --immutable
       - run:
           name: Run linting.
           command: yarn run lint
