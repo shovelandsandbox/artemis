@@ -46,7 +46,7 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - node-v14-latest:
+      - node-v16-latest:
           requires:
             - analysis
           filters:
