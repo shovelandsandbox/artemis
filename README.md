@@ -60,7 +60,8 @@ Please see the [Apollo Plugins](https://www.apollographql.com/docs/apollo-server
 ### `events`
 
 Type: `Record<string, boolean>`<br>
-Default: 
+Default:
+
 ```js
 {
   didEncounterErrors: true,
@@ -77,18 +78,21 @@ Default:
 Specifies which [Apollo lifecycle events](https://www.apollographql.com/docs/apollo-server/integrations/plugins/#apollo-server-event-reference) will be logged. The `requestDidStart` event is always logged, and by default `didEncounterErrors` and `willSendResponse` are logged.
 
 ### `mutate`
+
 Type: `Function`
 Default: `(data: Record<string, string>) => Record<string, string>`
 
 If specified, allows inspecting and mutating the data logged to the console for each message.
 
 #### `prefix`
+
 Type: `String`<br>
 Default: `apollo`
 
 Specifies a prefix, colored by level, prepended to each log message.
 
 #### `timestamp`
+
 Type: `Boolean`
 
 If `true`, will prepend a timestamp in the `HH:mm:ss` format to each log message.
@@ -98,4 +102,7 @@ If `true`, will prepend a timestamp in the `HH:mm:ss` format to each log message
 [CONTRIBUTING](./.github/CONTRIBUTING.md)
 
 [LICENSE (Mozilla Public License)](./LICENSE)
+
+```
+
 ```

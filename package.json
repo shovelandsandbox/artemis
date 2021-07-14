@@ -20,7 +20,7 @@
     "lint-staged": "yarn lint-staged",
     "lint:docs": "yarn prettier --single-quote --arrow-parens avoid --trailing-comma none --write README.md",
     "lint:js": "yarn eslint --fix --cache src test",
-    "lint:json": "yarn prettier --write codecov.yml .circleci/config.yml .eslintrc.js",
+    "lint:json": "yarn prettier --write codecov.yml .circleci/config.yml .eslintrc",
     "lint:package": "yarn prettier --write package.json --plugin=prettier-plugin-package",
     "prepublishOnly": "yarn run lint && yarn run build",
     "pretest": "yarn run build",
