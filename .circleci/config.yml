@@ -1,22 +1,22 @@
 version: 2
 jobs:
-  node-v14-latest:
+  node-v16-latest:
     docker:
-      - image: rollupcabal/circleci-node-v14:latest
+      - image: rollupcabal/circleci-node-v16:latest
     steps:
       - checkout
       - run:
           name: Node Info
           command: node --version && npm --version
       - run:
-          name: Install pnpm
-          command: npm install pnpm -g
+          name: Install yarn
+          command: npm install yarn -g
       - run:
           name: Install Dependencies
-          command: pnpm install --ignore-scripts
+          command: yarn --immutable --ignore-scripts
       - run:
           name: Run unit tests.
-          command: pnpm ci:coverage
+          command: yarn run ci:coverage
       - run:
           name: Submit coverage data to codecov.
           command: bash <(curl -s https://codecov.io/bash)
@@ -27,17 +27,17 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install pnpm
-          command: npm install pnpm -g
+          name: Install yarn
+          command: npm install yarn -g
       - run:
           name: Install Dependencies
-          command: pnpm install --ignore-scripts
+          command: yarn install --immutable --ignore-scripts
       - run:
           name: Run linting.
-          command: pnpm lint
+          command: yarn run lint
       - run:
           name: Audit Dependencies
-          command: pnpm security
+          command: yarn run security
 workflows:
   version: 2
   validate:
