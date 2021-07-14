@@ -2,7 +2,7 @@ version: 2
 jobs:
   node-v16-latest:
     docker:
-      - image: rollupcabal/circleci-node-v16:latest
+      - image: cimg/node:16.4.1
     steps:
       - checkout
       - run:
@@ -23,7 +23,7 @@ jobs:
           when: on_success
   analysis:
     docker:
-      - image: rollupcabal/circleci-node-base:latest
+      - image: cimg/node:16.4.1
     steps:
       - checkout
       - run:
