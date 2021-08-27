@@ -1,5 +1,5 @@
 export const resolvers = {
   Query: {
-    batman: () => 'nanananana'
-  }
-};
+    batman: () => 'nanananana',
+  },
+}

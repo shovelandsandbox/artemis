@@ -15,9 +15,9 @@
 
 # Artemis
 
-A logging plugin for Apollo GraphQL Server
+An (in-progress/not ready) logging plugin for Apollo GraphQL Server
 
-:heart: Please consider [Sponsoring our work](https://github.com/sponsors/shovelandsandbox)
+:heart: Please consider [Sponsoring my work](https://github.com/sponsors/shovelandsandbox)
 
 This module provides uniform logging for the entire GraphQL request lifecycle, as provided by plugin hooks in `apollo-server`. The console/terminal result of which will resemble the image below:
 

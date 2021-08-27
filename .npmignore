@@ -1,0 +1,15 @@
+test/
+src/
+.yarn/
+.github/
+.git/
+.editorconfig
+.gitignore
+.gitattributes
+.nvmrc
+.prettierrc
+.yarnrc.yml
+codecov.yml
+commitlint.config.js
+tsconfig.*
+yarn.lock

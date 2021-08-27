@@ -513,6 +513,7 @@ __metadata:
     apollo-server-plugin-base: ^0.10.4
     ava: ^3.15.0
     chalk: ^4.1.0
+    consola: ^2.15.3
     eslint: ^7.18.0
     eslint-config-prettier: 6.5.0
     eslint-plugin-import: ^2.23.4
@@ -2228,6 +2229,13 @@ __metadata:
     write-file-atomic: ^3.0.0
     xdg-basedir: ^4.0.0
   checksum: 81dd877bf784af29e7bbeb14e183fef21df07d9eceb3e94601a0689accb168b55f4661c629d32f079f88ea1bff3396434beb0d022414b601e72cf89adf4167e1
+  languageName: node
+  linkType: hard
+
+"consola@npm:^2.15.3":
+  version: 2.15.3
+  resolution: "consola@npm:2.15.3"
+  checksum: 914e2b0b24605a41f1a83ae29a0238558d01a01c40ada5817db81b2dd1543a540d59e38e81e736d05360246379a18013e6930b32231650898dfc4adb52a93523
   languageName: node
   linkType: hard
 
